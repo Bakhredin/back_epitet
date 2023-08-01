@@ -12,7 +12,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
-                   "http://epitet.vercel.app"
+                   "https://epitet.vercel.app"
                    ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
