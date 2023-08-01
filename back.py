@@ -10,10 +10,13 @@ load_dotenv()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000",
+                   "https://epitet.vercel.app/"
+                   ],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
+    
 )
 openai.api_key = os.getenv("OPENAI")
 openai_model = "gpt-3.5-turbo"
