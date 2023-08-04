@@ -38,7 +38,7 @@ async def process_message(request: MessageRequest):
     # prompt = request.message.split()[0]
     prompt = request.message
     print(prompt)
-    if prompt == "Бахредин":
+    if prompt == "Жантик":
         prompt = "тупой"
         print("О, Бахрединтупой")
 
